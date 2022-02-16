@@ -20,6 +20,8 @@ head(choco)
 
 2. How does the number of ratings depend on the year? Draw a bar chart of the number of reports.
 
+choco %>% ggplot(aes(x = as.factor(Review.Date))) + geom_bar()
+
 ### Question Set 2
 
 For each of the questions below provide at least one graphic as a basis for your answer.
