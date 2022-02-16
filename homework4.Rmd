@@ -13,3 +13,37 @@ library(ggplot2)
 choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
 head(choco)
 ```
+
+### Question Set 1
+
+1.  What is the overall number of chocolate bars rated?
+
+2. How does the number of ratings depend on the year? Draw a bar chart of the number of reports.
+
+### Question Set 2
+
+For each of the questions below provide at least one graphic as a basis for your answer.
+
+   1. How are ratings distributed? Draw a histogram of ratings and describe it. Don’t forget to mention outliers, if there are any.
+   2.Do ratings depend on the cocoa percentage of a chocolate bar?
+   3. How do ratings compare across different company locations? Focus on the three locations with the most ratings:
+
+### Your Question
+
+1. Discuss a question you want to investigate.
+2. Answer this question by graphs.
+3. Conclusions.
+
+
+
+### Submission
+In Canvas, submit an RMarkdown file with:
+1. the names of all team members that worked on the document;
+2. a link to the github repo you were working in;
+3. code and answers to all of the questions;
+4. the question you want to investigate with its answers and conclusions;
+5. one paragraph commenting on the workflow;
+6. a html or pdf file of the final output.
+
+
+
