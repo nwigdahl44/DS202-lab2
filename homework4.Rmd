@@ -1,0 +1,15 @@
+---
+title: 'Homework #4'
+author: "Nathaniel Wigdahl & Aidan Bergstein"
+date: "2/16/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+```{r import dataset}
+choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
+head(choco)
+```
