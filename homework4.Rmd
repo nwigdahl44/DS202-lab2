@@ -85,10 +85,18 @@ The only other thing of note is that France and U.S.A. have lower minimums than 
 ### Your Question
 
 1. Discuss a question you want to investigate.
+
+A question that I would want to investigate from looking at this dataset would be, does the specific bean origin within a country play a role in differing the ratings for each type of chocalte within that country and if there are several parts within each country that do the best job of producing chocalate?
+
 2. Answer this question by graphs.
+
+Upon looking at plots for these two variables, I was not able to find any strong correlations between the specific bean origin and the rating of the chocolate.
+
 3. Conclusions.
 
+Our investiagation into this dataset revealed very little correlation between the rating of chocalate and other variables that are measured such as cocoa percentage and specific bean orgin. We believe that this data is heavily opinion based which is what lead us to having difficulty finding corrleations as there is no true values that play a direct role in the rating of the chocalate.
 
+Workflow: We did a very good job working together to evaluate this dataset. We tried several different codes throughout our investiagation and checked in with each other to make sure all codes properly functioned and gave us the information we needed. We were both easily able to explain to each other what we were doing while investigating and why we did something which allowed us to work very smoothly. We were able to reach agreements on analysis of the dataframe based on the plots that we recieved which helped us a lot to understand the dataset.
 
 ### Submission
 In Canvas, submit an RMarkdown file with:
