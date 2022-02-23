@@ -33,8 +33,51 @@ choco %>% ggplot(aes(x = as.factor(Review.Date))) + geom_bar()
 For each of the questions below provide at least one graphic as a basis for your answer.
 
    1. How are ratings distributed? Draw a histogram of ratings and describe it. Don’t forget to mention outliers, if there are any.
+   
+  ```{r}
+  breaks =c(1, 1.99, 2.99, 3.99, 4.99, 5.99);
+  hist(choco$Rating, breaks = breaks)
+  ```
+  This histogram is pretty chunky, let's make it more granular
+  
+  ```{r}
+  hist(choco$Rating, breaks = 17)
+  ```
+  
+  Here we can see that the ratings are almost entirely distributed between 2 and 4, with a slight left skew towards one. There are also some outliers at 5. I wonder how many?
+  
+  ```{r}
+  count(filter(choco, Rating > 4))
+  ```
+  So there are only two ratings above 4, which if we look closer are both ratings of 5.
+  
+
    2.Do ratings depend on the cocoa percentage of a chocolate bar?
+   
+   We'll use a scatterplot to examine the relation between Rating and Cocoa.Pct
+   ```{r}
+   ggplot(choco, aes(x=Rating, y=Cocoa.Pct))+geom_jitter()
+
+   ```
+   
+   There seems to be no linear relationship between the cocoa percentage and the rating. In fact the two highest rated chocolates have a similar percentage as three of the lowest rated chocolates.
+   
    3. How do ratings compare across different company locations? Focus on the three locations with the most ratings:
+   
+```{r Top three locations}
+summary(as.factor(choco$Company.Location))
+
+```
+
+We can see the highest producing locations are the USA, Canada, and France so we'll focus our analysis on these.
+
+```{r}
+choco_primary <- filter(choco, Company.Location == c('U.S.A.', 'Canada', 'France'))
+choco_primary %>% ggplot(aes(x = Company.Location, y = Rating)) + geom_boxplot()
+```
+
+From this boxplot we can see that France has the highest median value, with half its chocolates being rating at or above 3.5. Other than that these countries produce a comparable range of chocolates. 
+The only other thing of note is that France and U.S.A. have lower minimums than Canada.
 
 ### Your Question
 
