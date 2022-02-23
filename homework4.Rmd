@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
+library(dplyr)
 ```
 ```{r import dataset}
 choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
@@ -18,10 +19,15 @@ head(choco)
 
 1.  What is the overall number of chocolate bars rated?
 
+```{r}
+count(choco)
+```
+
 2. How does the number of ratings depend on the year? Draw a bar chart of the number of reports.
 
+```{r}
 choco %>% ggplot(aes(x = as.factor(Review.Date))) + geom_bar()
-
+```
 ### Question Set 2
 
 For each of the questions below provide at least one graphic as a basis for your answer.
