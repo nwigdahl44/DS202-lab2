@@ -101,7 +101,7 @@ Workflow: We did a very good job working together to evaluate this dataset. We t
 ### Submission
 In Canvas, submit an RMarkdown file with:
 1. the names of all team members that worked on the document;
-2. a link to the github repo you were working in;
+2. a link to the github repo you were working in ->https://github.com/nwigdahl44/DS202-lab2
 3. code and answers to all of the questions;
 4. the question you want to investigate with its answers and conclusions;
 5. one paragraph commenting on the workflow;
